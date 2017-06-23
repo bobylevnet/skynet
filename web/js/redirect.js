@@ -1,0 +1,1 @@
+setTimeout(function () { window.location.href= '/site/index'; },3000);

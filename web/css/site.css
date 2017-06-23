@@ -1,0 +1,323 @@
+html,
+body {
+
+ 
+    height: 100%;
+    background: 'basic/web/img/bg.jpg';
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 150px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+header .second-line .right{
+    text-align: right;
+    float: right;
+    display:inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    
+}
+header .second-line .right span{
+   margin-top: 60px;
+   display: block;    
+}
+
+header .second-line .left{
+  	width: 30%;
+    display: inline-block;
+}
+
+header .second-line .left img{
+  	margin-left: 10px;
+}
+
+header .second-line .left span{
+  	display: block;
+}
+
+header .three-line{
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+
+.nav-border li{
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+}
+
+.front-carusel{
+	width: 100%;
+	background-color: black;
+}
+.carousel{
+	
+}
+
+.img-slider{
+	width: 30%;
+	height: 30%;
+}
+.slide{
+	height: 350px;
+	position: relative;
+}
+
+#slide{
+		height: 350px;
+
+}
+
+
+
+.color1{
+	background-color: rgb(65, 172, 201);
+}
+
+.color2{
+	background-color: rgb(121, 219, 30);
+}
+
+.color3{
+	background-color: rgb(159, 113, 161)
+}
+.carousel-control.left{
+	background-image: none;
+}
+.carousel-control.right{
+	background-image: none;
+}
+
+.imgslidehide{
+	position: absolute;
+	top: 100%;
+
+	left: 60%;
+}
+
+
+.pst-abs{
+	position: absolute;
+
+	left: 100px;
+}
+
+.slide{
+	display: block;
+
+	color: white;
+	font-size: 18px;
+	
+}
+
+.txt-msg{
+	
+	top: 100%;
+	left: 20%;
+	border-top-style: double;
+	border-bottom-style: double;
+	
+}
+.btn{
+	background:#ada69c;
+	top: 100%;
+	opacity: 0.6;
+	color: white;
+	left: 20%;
+	
+}
+
+.btn:hover{
+
+	font-weight: bold;
+	color: white;
+	
+}
+.header
+{
+	top:100%;
+	position: absolute;
+	left: 20%;
+	
+	 
+}
+
+.carousel
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+	
+}
+.shadow
+{
+	 box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	 text-align: center;
+	
+}
+.btn-tarif{
+	width: 100%;
+}
+
+.login {
+	color: white;
+}
+.none{
+	background: white;
+	 box-shadow: 0;
+}
+.action
+{
+	padding-left: 90px;
+	
+}
+
+.cntr
+{
+	text-align: center;
+}
+
+.alert.tp
+{
+	margin-top: 50px;
+	text-align: center;
+	
+	
+}
+
+
+
+.vacancy-item{
+	text-align: center;
+	
+}
+
+.vacancy-item div{
+	margin: 10px;
+	display: inline-block;
+	
+}
+
+.btn-full{
+	margin-top: 5px;
+	width: 80%;
+}
+
+.left-content-footer{
+	margin-left: 60%;
+}
+
+.header-comp{
+	font-size: large;
+	
+}
+
