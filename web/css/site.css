@@ -321,3 +321,11 @@ header .three-line{
 	
 }
 
+.container.pdng-top{
+	padding: 10px 15px 20px;
+}
+
+.img-wh{
+	height: 800px;
+	width: 600px;
+}

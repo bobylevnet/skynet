@@ -89,4 +89,27 @@ class Tarifs extends \yii\db\ActiveRecord
     	
     	
     }
+    
+    
+    public function getDetailTarifs($id)
+    {
+    	
+    	
+    	$detail = Tarifs::find()->where('id='.$id)->select(['detail'])->one();
+    	
+    	$arr = explode('.', $detail->attributes['detail']);
+    	$detailr = '';
+    	
+    	foreach ($arr as $key=>$value){
+    		
+    		$detailr = $detailr . '<p>';
+    		$detailr = $detailr . $value;
+    		$detailr = $detailr . '.</p>';
+    	}
+    	
+    	
+    	return $detailr;
+    }
+    
+    
 }

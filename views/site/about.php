@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container pdng-top">
 
 <h2> О компании </h2>
 <p>

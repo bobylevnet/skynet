@@ -101,7 +101,6 @@ AppAsset::register($this);
 </div>
 </header>
 
-
  
         <?= $content ?>
          
@@ -110,7 +109,7 @@ AppAsset::register($this);
     <div class="container">
     
        <div class="left-content-footer">
-        <p> <?= \yii\bootstrap\Html::a('О компании',Url::to('/site/license'),['class'=>'header-comp']) ?> </p>
+        <p> <?= \yii\bootstrap\Html::a('О компании',Url::to('/site/about'),['class'=>'header-comp']) ?> </p>
         <p> <?= \yii\bootstrap\Html::a('Контакты',Url::to('/site/adres')) ?> </p>
         <p> <?= \yii\bootstrap\Html::a('Лицензии',Url::to('/site/license')) ?> </p>
        

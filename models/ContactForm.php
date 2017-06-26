@@ -38,7 +38,7 @@ class ContactForm extends Model
             // email has to be a valid email address
             ['email', 'email'],
             // verifyCode needs to be entered correctly
-            ['verifyCode', 'captcha'],
+            ['verifyCode', 'captcha','message'=>'Введите код с картинки'],
         ];
     }
 
@@ -47,13 +47,21 @@ class ContactForm extends Model
      */
     public function attributeLabels()
     {
+    	
+    	 if  ($this->scenario=='request') {
+    	 	$message ="Ваши пожелания";
+    	
+    	 }
+    	 else {
+    	 	$message='Опишите свою проблему';
+    	 	}
         return [
         	'name' => 'Ваше имя',
         	'email' => 'Электронная почта',
         	'tarifs' => 'Тариф',
         	'phone' => 'Телефон  в формате +79227777777',
             'verifyCode' => 'Введите код на картинке',
-        	'message' => "Опишите свою проблему",
+        	'message' =>$message,
         ];
     }
     

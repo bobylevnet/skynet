@@ -12,7 +12,7 @@ echo  Carousel::widget([
 				//   Html::img('img\accord\present.png',['class'=>'']) ,
 				// equivalent to the above
 				['content' => '<div  class="slide color1"> <h3 class="header">АКЦИЯ</h3>'.Html::img('@web/img/accord/present.png',['id'=>'slider','class'=>'imgslidehide']).'
-        		<span class="pst-abs txt-msg">Подключение + 1 месяц интернета бесплатно</span>'.
+        		<span class="pst-abs txt-msg">Приведи друга и получи 20% скидку</span>'.
 						Html::a("Узнать больше",'',["class"=>"pst-abs btn"])   .'</div>',
 						'caption' => '',],
 				// the item contains both the image and the caption

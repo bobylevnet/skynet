@@ -53,3 +53,13 @@
 	padding-left: 90px;
 	
 }
+
+.notifyjs-happyblue-base {
+  white-space: nowrap;
+  background-color: rgb(73,169,241);
+  padding: 5px;
+}
+.notifyjs-happyblue-superblue {
+  color: white;
+  background-color: rgb(73,169,241);
+}

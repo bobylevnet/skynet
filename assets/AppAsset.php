@@ -29,7 +29,9 @@ class AppAsset extends AssetBundle
     
     public $js = [
     	'js/carous.js',
-    	 'js/menuactive.js'
+    	 'js/menuactive.js',
+    	'js/notify.min.js',
+    	'js/notify.js',
     ];
    
 

@@ -26,15 +26,12 @@ $this->title = 'Интернет тарифы';
     <div class="container">
    <h1><?php  echo  Html::encode($this->title) ?></h1>
     <div class="clmn-center">
-    <div class="cntr">
+    <div id="test" class="cntr">
     <?= Tarifs::widget([
     		'model'=> new TarifsTable(),
     		'img' => Html::img('@web/img/tarifs-internet.png'),
     		'condition'=>'internet']);?>
     </div>
-    
-           </div>
-    
-    
+ </div>
     </div>
 </div>

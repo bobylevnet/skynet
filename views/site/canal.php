@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 ?>
-<div class="container">
+<div class="container pdng-top">
 
 <h2> Виртуальная частная сеть (IP VPN) </h2>
 
@@ -30,7 +30,7 @@ use yii\helpers\Url;
 </li>
 </ul>
 
-<?= Html::a('Написать нам', Url::to(['/site/contact','scenario'=>'uripeople']))?>
+<?= Html::a('Написать нам', Url::to(['/site/request']))?>
 </div>
 
 
