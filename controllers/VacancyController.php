@@ -8,16 +8,17 @@ use app\models\VacancySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\components\bahivController;
 
 /**
  * VacancyController implements the CRUD actions for Vacancy model.
  */
-class VacancyController extends Controller
+class VacancyController extends bahivController
 {
     /**
      * @inheritdoc
      */
-    public function behaviors()
+    /*public function behaviors()
     {
         return [
             'verbs' => [
@@ -27,7 +28,7 @@ class VacancyController extends Controller
                 ],
             ],
         ];
-    }
+    }*/
 
     /**
      * Lists all Vacancy models.

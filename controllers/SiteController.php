@@ -99,15 +99,20 @@ class SiteController extends Controller
     	return $this->render('video');
     }
     
+    public function actionIpwhite()
+    {
+    	
+    	return $this->render('ipwhite');
+    }
+    
+    
+    
     public function actionInternet()
     {
     	
     	$model = new ContactForm(['scenario'=>ContactForm::SCENARIO_REQUEST]);
-    	
-    	 
     	if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-    		Yii::$app->session->setFlash('contactFormSubmitted');
-    		 
+    		Yii::$app->session->setFlash('contactFormSubmitted');    		 
     		return $this->refresh();
     	}
     	return $this->render('internet', ['model'=>$model]);

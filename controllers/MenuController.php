@@ -8,16 +8,17 @@ use app\models\MenuSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\components\bahivController;
 
 /**
  * MenuController implements the CRUD actions for Menu model.
  */
-class MenuController extends Controller
+class MenuController extends bahivController
 {
     /**
      * @inheritdoc
      */
-    public function behaviors()
+    /*public function behaviors()
     {
         return [
             'verbs' => [
@@ -27,7 +28,7 @@ class MenuController extends Controller
                 ],
             ],
         ];
-    }
+    }*/
 
     /**
      * Lists all Menu models.

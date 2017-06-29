@@ -9,16 +9,16 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-
+use app\components\bahivController;
 /**
  * TarifsController implements the CRUD actions for Tarifs model.
  */
-class TarifsController extends Controller
+class TarifsController extends bahivController
 {
     /**
      * @inheritdoc
      */
-    public function behaviors()
+  /*  public function behaviors()
     {	
         return [	
         	'access' => [
@@ -39,7 +39,7 @@ class TarifsController extends Controller
                 ],
             ],
         ];
-    }
+    }*/
 
     /**
      * Lists all Tarifs models.
@@ -65,19 +65,18 @@ class TarifsController extends Controller
     
     
     
+    public function actionVideo()
+    {
+    	
+    	return $this->render('video');
+    }
+    
+    
+    
     public function actionInternet($id=null)
     {
-    	$result = '';
-    	$tarifs  = new Tarifs();
-    	if (Yii::$app->request->isPjax)
-        {
-        	
-        $result = 	$tarifs->getDetailTarifs($id);	
-        //$searchModel = new TarifsSearch();
-       // $dataProvider = $searchMod
-      // el->search(Yii::$app->request->queryParams);
-        }
-        return $this->render('internet',['result'=>$result]);
+    	
+        return $this->render('internet');
     }
 
     public function actionTv()

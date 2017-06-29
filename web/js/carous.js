@@ -28,7 +28,7 @@ function Animate(options)
 {
 	
 	var selectElements = Array.prototype.slice.call(arguments);
-	//проуент увеленичения времени анимации
+	//процент увеленичения времени анимации
 	var timeAnimate = 1.80;
 	this.animating = function(a,time) {
 	//	return new Promise(function (resolve, reject) 

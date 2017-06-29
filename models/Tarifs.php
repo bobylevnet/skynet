@@ -90,7 +90,7 @@ class Tarifs extends \yii\db\ActiveRecord
     	
     }
     
-    
+    ///не используется
     public function getDetailTarifs($id)
     {
     	
