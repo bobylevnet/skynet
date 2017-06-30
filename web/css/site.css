@@ -329,3 +329,16 @@ header .three-line{
 	height: 800px;
 	width: 600px;
 }
+
+.logo{
+	    position: absolute;
+    float: left;
+    padding-left: 70%;
+    padding-top: 3%;
+}
+
+.logo img {
+	
+	
+	
+}

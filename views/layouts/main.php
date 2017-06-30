@@ -107,13 +107,22 @@ AppAsset::register($this);
     </div>
 <footer class="footer">
     <div class="container">
+     <div class="logo">
+     <a href="mailto::bobylevnet@gmail.com">
     
+        	<?=  \yii\bootstrap\Html::img('/logom.png') ?>
+        	 </a>
+        </div>
        <div class="left-content-footer">
         <p> <?= \yii\bootstrap\Html::a('О компании',Url::to('/site/about'),['class'=>'header-comp']) ?> </p>
         <p> <?= \yii\bootstrap\Html::a('Контакты',Url::to('/site/adres')) ?> </p>
         <p> <?= \yii\bootstrap\Html::a('Лицензии',Url::to('/site/license')) ?> </p>
+        
        
         </div>
+        
+        
+      
  <p class="pull-left">&copy; ООО "Скай-нет" <?= date('Y') ?></p>
        
     </div>
