@@ -13,13 +13,19 @@ use yii\widgets\listView;
 ?>
 <div class="vacancy-index">
 
-
+<div class="container">
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
         <?php // Html::a('Create Vacancy', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-    <?= ListView::widget([
+    <?php 
+    if (!is_null($dataProvider)){
+    	echo '<h2>Свободных вакансий нет </h2>';
+    }
+    else {
+    
+     ListView::widget([
         'dataProvider' => $dataProvider,
        	'itemView' => '_list',
      	'summary' => '',
@@ -35,8 +41,8 @@ use yii\widgets\listView;
 
             ['class' => 'yii\grid\ActionColumn'],
         ],*/
-    ]); ?>
-
+    ]); }?>
+</div>
 </div>
 
 

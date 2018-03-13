@@ -28,7 +28,7 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Html::encode('SkyNet') ?></title>
     <?php  
   
     $this->head() ?>
@@ -45,7 +45,7 @@ AppAsset::register($this);
     NavBar::begin([
         'brandLabel' => '' ,
         'brandUrl' => Yii::$app->homeUrl,
-    	'brandOptions'=> ['class'=>'logo'],
+    	//'brandOptions'=> ['class'=>'logo'],
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
@@ -68,7 +68,7 @@ AppAsset::register($this);
  <div class="second-line">
 
      <div class="container">
-         <div class="row">
+         <div class="row row-height">
              <div class="left">
                <?= Html::beginTag('a',  ['href' => Url::to()]); ?>
                <?php   echo Html::img('@web/img/logo.png');  ?>
@@ -76,7 +76,7 @@ AppAsset::register($this);
                <?= Html::endTag('a')  ?>      
              </div>
              <div class="right">
-             	<span> 8 (3496) 300-354</span>
+             	<a href="tel:83496300354"><span style="color:black"> 8 (3496) 300-354</span></a>
              </div>
          </div>
      </div>
@@ -107,22 +107,19 @@ AppAsset::register($this);
     </div>
 <footer class="footer">
     <div class="container">
-     <div class="logo">
-     <a href="mailto::bobylevnet@gmail.com">
-    
-        	<?=  \yii\bootstrap\Html::img('/logom.png') ?>
-        	 </a>
-        </div>
+     
        <div class="left-content-footer">
         <p> <?= \yii\bootstrap\Html::a('О компании',Url::to('/site/about'),['class'=>'header-comp']) ?> </p>
         <p> <?= \yii\bootstrap\Html::a('Контакты',Url::to('/site/adres')) ?> </p>
         <p> <?= \yii\bootstrap\Html::a('Лицензии',Url::to('/site/license')) ?> </p>
-        
-       
+      <a href="mailto::bobylevnet@gmail.com">
+    		Сайт разработан 
+        	<?=  \yii\bootstrap\Html::img('/logom.png') ?>
+        	 </a>
+    
         </div>
         
-        
-      
+
  <p class="pull-left">&copy; ООО "Скай-нет" <?= date('Y') ?></p>
        
     </div>

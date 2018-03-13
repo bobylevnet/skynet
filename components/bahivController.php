@@ -1,8 +1,6 @@
-<?phpnamespace  app\components;use yii\base\Controller;
+<?phpnamespace  app\components;
 use yii\filters\AccessControl;use yii\filters\VerbFilter;
-class  bahivController extends Controller
-
-{
+class  bahivController extends \yii\web\Controller{
 public function behaviors()
 {
 	return [
@@ -24,4 +22,4 @@ public function behaviors()
 					],
 			],
 	];
-}}
+}}

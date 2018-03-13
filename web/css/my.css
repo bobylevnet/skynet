@@ -32,9 +32,14 @@
 	margin: 0 auto;
 	width: 80%;
 }
+.row-height{
+	padding-top: 5%;
+}
 
-
-	
+.btn-a{
+	margin-left: 20%;
+	margin-right: 20%;
+}	
 .tarifs{
 	display:  block;
 

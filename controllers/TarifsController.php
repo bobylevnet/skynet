@@ -18,7 +18,7 @@ class TarifsController extends bahivController
     /**
      * @inheritdoc
      */
-  /*  public function behaviors()
+   public function behaviors()
     {	
         return [	
         	'access' => [
@@ -39,7 +39,7 @@ class TarifsController extends bahivController
                 ],
             ],
         ];
-    }*/
+    }
 
     /**
      * Lists all Tarifs models.
@@ -122,8 +122,10 @@ class TarifsController extends bahivController
      * @param string $id
      * @return mixed
      */
-    public function actionUpdate($id)
+    public function actionUpdate()
     {
+    	$id = $_GET['id'];
+    	
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {

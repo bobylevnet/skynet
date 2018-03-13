@@ -137,7 +137,7 @@ class SiteController extends Controller
     {
     
     	Yii::$app->session['menuselect'] = 'activemenu3';
-    	return $this->render('cabinet');
+    	return $this->redirect("https:\\cabinet.skynet89.ru");
     }
     
     /**
