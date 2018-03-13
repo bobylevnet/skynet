@@ -155,11 +155,11 @@ class ChoiceFormField extends FormField
     /**
      * Adds a choice to the current ones.
      *
-     * This method should only be used internally.
-     *
      * @param \DOMElement $node
      *
      * @throws \LogicException When choice provided is not multiple nor radio
+     *
+     * @internal
      */
     public function addChoice(\DOMElement $node)
     {
@@ -254,12 +254,8 @@ class ChoiceFormField extends FormField
 
     /**
      * Returns option value with associated disabled flag.
-     *
-     * @param \DOMElement $node
-     *
-     * @return array
      */
-    private function buildOptionValue(\DOMElement $node)
+    private function buildOptionValue(\DOMElement $node): array
     {
         $option = array();
 

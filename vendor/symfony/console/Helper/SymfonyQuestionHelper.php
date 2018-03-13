@@ -11,8 +11,6 @@
 
 namespace Symfony\Component\Console\Helper;
 
-use Symfony\Component\Console\Exception\LogicException;
-use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
@@ -30,31 +28,9 @@ class SymfonyQuestionHelper extends QuestionHelper
     /**
      * {@inheritdoc}
      */
-    public function ask(InputInterface $input, OutputInterface $output, Question $question)
-    {
-        $validator = $question->getValidator();
-        $question->setValidator(function ($value) use ($validator) {
-            if (null !== $validator) {
-                $value = $validator($value);
-            } else {
-                // make required
-                if (!is_array($value) && !is_bool($value) && 0 === strlen($value)) {
-                    throw new LogicException('A value is required.');
-                }
-            }
-
-            return $value;
-        });
-
-        return parent::ask($input, $output, $question);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     protected function writePrompt(OutputInterface $output, Question $question)
     {
-        $text = OutputFormatter::escape($question->getQuestion());
+        $text = OutputFormatter::escapeTrailingBackslash($question->getQuestion());
         $default = $question->getDefault();
 
         switch (true) {
